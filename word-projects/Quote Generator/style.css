@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a9a9a9;
+}
+.containor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.content,
+.author {
+  font-size: 30px;
+  text-align: center;
+  line-height: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 9px;
+  background-color: #a52a2a;
+  color: #fff;
+  font-weight: 700;
+}
+.btn:active {
+  background-color: #581010;
+}
