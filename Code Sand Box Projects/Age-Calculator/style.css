@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 10px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    min-width: 300px;
+    align-items: center;
+}
+.container label {
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+.container #dob {
+    margin-bottom: 30px;
+}
+.container .desc {
+    font-size: 25px;
+    margin-bottom: 4rem;
+}
+.container .age {
+    font-size: 30px;
+}
+.container .age > span {
+    font-weight: bold;
+}
+.error {
+    display: none;
+    font-size: 40px;
+}
+#btn{
+    margin:-10px 0 10px 0;
+    padding: 5px 10px;
+    background: rgb(205, 204, 204);
+    border-radius: 9px;
+}       
+
+@media screen and (max-width: 400px){
+ .age{
+    display: grid;
+    grid-row: 1;
+
+ }
+}
