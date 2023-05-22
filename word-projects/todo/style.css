@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(224, 142, 26);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 50;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", cursive;
+}
+
+.heading {
+  font-weight: 800;
+  color: rgb(23, 235, 48);
+}
+
+.input_div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 53px;
+}
+
+.input_div .input {
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #ffff;
+  width: 450px;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+}
+
+.addButton {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: #fff;
+  margin: 0.25rem;
+  background-color: rgba(25, 190, 185, 0.485);
+  cursor: pointer;
+}
+
+.addButton:hover {
+  opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 2rem;
+  width: 450px;
+}
+
+.item {
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #fff;
+}
+
+.item_input {
+  background: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 350px;
+  font-size: 1.4rem;
+}
+
+.btn {
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  font-family: "Bebas Neue", cursive;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.editBtn {
+  color: #383cc1;
+}
+
+.deleteBtn {
+  color: rgb(223, 16, 16);
+}
+.copyBtn {
+  color: rgb(44, 158, 158);
+}
+
+.spanTodo {
+  display: block;
+  background-color: #00000085;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 9px;
+  /* word-break: break-all; */
+  word-wrap: break-word;
+  width: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-btn-continer {
+  max-width: 40vw;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 595px) {
+  .main {
+    margin: auto 50px;
+  }
+  .input_div {
+    margin: 0;
+  }
+  .input_div .input,
+  .container,
+  .spanTodo {
+    width: 80vw;
+  }
+  .container {
+    margin-left: -32px;
+  }
+  .text-btn-continer {
+    max-width: 80vw;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .input_div .input {
+    height: auto;
+  }
+  .addButton {
+    height: 30px;
+    width: 30px;
+  }
+}
